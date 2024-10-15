@@ -1,0 +1,12 @@
+observations:
+  evaluation_if_server_could_handle_load:
+    - performance_metrics:
+        - stable_memory:la memoria usa normalmente 780 m al mandar el trafico llego a 794 m utilizados
+        - cpu_load_average: paso de 0.37 a 1.92 al mandar 5000 paquetes 
+
+  specification_of_excessive_resource_usage:
+    - cpu_peak_usage:
+        - observed: true  
+        - peak_percentage: 90
+        - request_count_at_peak:
+            - value: 5000
